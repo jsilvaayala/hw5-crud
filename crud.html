@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project CRUD | Portfolio</title>
+</head>
+<body>
+  <header>
+    <h1>Manage Projects</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project List</h2>
+      <section id="projects"></section>
+    </section>
+
+    <section>
+      <h2>Create / Update Project</h2>
+      <form id="project-form">
+        <label>ID (for update/delete): <input type="number" id="project-id"></label>
+        <label>Title: <input type="text" id="project-title" required></label>
+        <label>Image URL: <input type="text" id="project-img" required></label>
+        <label>Description: <input type="text" id="project-desc" required></label>
+        <label>Link: <input type="text" id="project-link" required></label>
+        <button type="submit" id="create-btn">Create</button>
+        <button type="button" id="update-btn">Update</button>
+        <button type="button" id="delete-btn">Delete</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Jorge Silva</p>
+  </footer>
+
+  <script type="module" src="project-card.js"></script>
+  <script type="module" src="crud.js"></script>
+</body>
+</html>
